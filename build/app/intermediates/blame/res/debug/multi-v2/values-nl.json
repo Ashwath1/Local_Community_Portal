@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\dvk\\flash-chat-flutter-master\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nl\\values-nl.xml",
+            "outputFile": "C:\\Users\\dvk\\local_community_portal\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nl\\values-nl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\dvk\\.gradle\\caches\\transforms-2\\files-2.1\\32b6d3a1d555b218f74e6f047b725b9b\\core-1.1.0\\res\\values-nl\\values-nl.xml",

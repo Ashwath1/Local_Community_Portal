@@ -1,7 +1,7 @@
 flash_chat
 2.1
-file:///C:/Users/dvk/flash-chat-flutter-master/
-file:///C:/Users/dvk/flash-chat-flutter-master/lib/
+file:///C:/Users/dvk/local_community_portal/
+file:///C:/Users/dvk/local_community_portal/lib/
 animated_text_kit
 2.12
 file:///C:/flutter_windows_2.0.3-stable/flutter/.pub-cache/hosted/pub.dartlang.org/animated_text_kit-4.2.1/
@@ -74,6 +74,10 @@ firebase_core_web
 2.12
 file:///C:/flutter_windows_2.0.3-stable/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-1.0.2/
 file:///C:/flutter_windows_2.0.3-stable/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-1.0.2/lib/
+fluttertoast
+2.12
+file:///C:/flutter_windows_2.0.3-stable/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-8.0.6/
+file:///C:/flutter_windows_2.0.3-stable/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-8.0.6/lib/
 http_parser
 2.12
 file:///C:/flutter_windows_2.0.3-stable/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.0/

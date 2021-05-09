@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\dvk\\flash-chat-flutter-master\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\dvk\\local_community_portal\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\dvk\\.gradle\\caches\\transforms-2\\files-2.1\\32b6d3a1d555b218f74e6f047b725b9b\\core-1.1.0\\res\\values\\values.xml",
@@ -59,7 +59,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dvk\\flash-chat-flutter-master\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\dvk\\local_community_portal\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,197,277,381,488,608,712",
+                        "endColumns": "141,79,103,106,119,103,80",
+                        "endOffsets": "192,272,376,483,603,707,788"
+                    },
+                    "to": {
+                        "startLines": "104,105,106,107,108,109,110",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "7730,7872,7952,8056,8163,8283,8387",
+                        "endColumns": "141,79,103,106,119,103,80",
+                        "endOffsets": "7867,7947,8051,8158,8278,8382,8463"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dvk\\local_community_portal\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -75,23 +92,6 @@
                         "endLines": "116",
                         "endColumns": "12",
                         "endOffsets": "8831"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\dvk\\flash-chat-flutter-master\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,197,277,381,488,608,712",
-                        "endColumns": "141,79,103,106,119,103,80",
-                        "endOffsets": "192,272,376,483,603,707,788"
-                    },
-                    "to": {
-                        "startLines": "104,105,106,107,108,109,110",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "7730,7872,7952,8056,8163,8283,8387",
-                        "endColumns": "141,79,103,106,119,103,80",
-                        "endOffsets": "7867,7947,8051,8158,8278,8382,8463"
                     }
                 }
             ]

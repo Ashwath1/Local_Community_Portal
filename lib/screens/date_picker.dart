@@ -51,7 +51,7 @@ class _DatePickerState extends State<DatePicker> {
   }
 }
 
-ThemeData _buildShrineTheme() {
+ThemeData buildShrineTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
     colorScheme: _shrineColorScheme,

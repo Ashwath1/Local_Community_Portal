@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flash_chat/screens/create_event.dart';
+import 'package:flash_chat/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flash_chat/screens/date_picker.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -17,6 +18,8 @@ class _HomeAppState extends State<HomeApp> {
   final _firestore = FirebaseFirestore.instance;
   User loggedInUser;
   String messageText;
+  String name;
+  String email;
 
   @override
   void initState() {
@@ -37,7 +40,19 @@ class _HomeAppState extends State<HomeApp> {
 
   Widget buildBottomSheet(BuildContext context) {
     return Container(
-      color: Colors.white,
+      height: 200,
+      color: Colors.amber,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          const Text('Modal BottomSheet'),
+          ElevatedButton(
+            child: const Text('Close BottomSheet'),
+            onPressed: () => Navigator.pop(context),
+          ),
+        ],
+      ),
     );
   }
 
@@ -45,16 +60,58 @@ class _HomeAppState extends State<HomeApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.lightBlueAccent,
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.lightBlueAccent,
-        child: Icon(
-          Icons.add,
-          color: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.blueAccent,
+        iconTheme: IconThemeData(color: Colors.white),
+      ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(
+              child: Padding(
+                padding: EdgeInsets.all(20.0),
+                child: Text(
+                  "Menu",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 40.0,
+                  ),
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.account_box_outlined),
+              title: Text(
+                'About',
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.of(context).pop();
+              },
+            ),
+            ListTile(
+                leading: Icon(Icons.exit_to_app),
+                title: Text(
+                  'Logout',
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+                onTap: () {
+                  {
+                    FirebaseAuth.instance.signOut().then((onValue) {
+                      Navigator.pushNamed(context, WelcomeScreen.id);
+                    });
+                  }
+                }),
+          ],
         ),
-        onPressed: () {
-          // Navigator.pushNamed(context, DatePicker.id);
-          showModalBottomSheet(context: context, builder: buildBottomSheet);
-        },
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -64,21 +121,9 @@ class _HomeAppState extends State<HomeApp> {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                GestureDetector(
-                  onTap: () {},
-                  child: CircleAvatar(
-                    child: Icon(
-                      Icons.list,
-                      size: 30.0,
-                      color: Colors.lightBlueAccent,
-                    ),
-                    backgroundColor: Colors.white,
-                    radius: 26.0,
-                  ),
-                ),
                 Padding(
                   padding:
-                      EdgeInsets.symmetric(horizontal: 45.0, vertical: 40.0),
+                      EdgeInsets.symmetric(horizontal: 72.0, vertical: 40.0),
                   child: TypewriterAnimatedTextKit(
                     text: ['Welcome!'],
                     textStyle: TextStyle(
